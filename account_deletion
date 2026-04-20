@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Conta | Fluxy</title>
+    <style>
+        :root {
+            --primary: #1E3A8A;
+            --secondary: #4F46E5;
+            --background: #F8FAFC;
+            --text-primary: #0F172A;
+            --text-secondary: #64748B;
+            --danger: #D32F2F;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-top: 0;
+        }
+
+        .alert {
+            background-color: #FEF2F2;
+            border-left: 4px solid var(--danger);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: #991B1B;
+        }
+
+        .step-card {
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="logo">Fluxy</p>
+        <p>Controle Financeiro Inteligente</p>
+    </header>
+
+    <main>
+        <h1>Solicitação de Exclusão de Conta e Dados</h1>
+        
+        <p>Valorizamos a sua privacidade. Esta página fornece instruções claras sobre como você pode solicitar a exclusão da sua conta e de todos os dados pessoais associados ao serviço <strong>Fluxy</strong>, operado pela <strong>FP Inteligência Financeira e Tecnológica LTDA</strong>.</p>
+
+        <div class="alert">
+            <strong>Atenção:</strong> A exclusão da conta é uma ação <u>irreversível</u>. Uma vez processada, você perderá acesso a todos os seus históricos de transações, orçamentos, categorias personalizadas e famílias compartilhadas.
+        </div>
+
+        <section>
+            <h2>Como realizar a exclusão</h2>
+
+            <div class="step-card">
+                <h3><span class="step-number">1</span> Pelo Aplicativo (Recomendado)</h3>
+                <p>O método mais rápido e seguro é realizar a exclusão diretamente pelo app Fluxy:</p>
+                <ul>
+                    <li>Abra o app <strong>Fluxy</strong> no seu dispositivo.</li>
+                    <li>Vá em <strong>"Configurações"</strong> (ícone de engrenagem).</li>
+                    <li>Clique em <strong>"Minha Conta"</strong>.</li>
+                    <li>Selecione a opção <strong>"Excluir Conta"</strong> na zona de perigo.</li>
+                    <li>Confirme a ação utilizando o código de segurança enviado para o seu e-mail cadastrado.</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <h3><span class="step-number">2</span> Por E-mail de Suporte</h3>
+                <p>Caso você não tenha mais acesso ao aplicativo instalado, pode solicitar a exclusão enviando um e-mail para nossa equipe de proteção de dados:</p>
+                <ul>
+                    <li>Envie um e-mail para <a href="mailto:contato@fpinteligencia.cloud">contato@fpinteligencia.cloud</a>.</li>
+                    <li>No assunto, digite: <strong>"Solicitação de Exclusão de Conta - [Seu E-mail Cadastrado]"</strong>.</li>
+                    <li>Nossa equipe responderá com os passos de validação de identidade e processará a exclusão em até 15 dias úteis.</li>
+                </ul>
+                <a href="mailto:contato@fpinteligencia.cloud?subject=Solicitação de Exclusão de Conta" class="btn">Solicitar via E-mail</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Informações sobre Retenção de Dados</h2>
+            <p>De acordo com nossa <a href="#">Política de Privacidade</a> e a LGPD:</p>
+            <ul>
+                <li><strong>O que é excluído:</strong> Nome, E-mail, Histórico de Transações, Contas Bancárias cadastradas, Categorias, Planejamentos e IDs de dispositivos.</li>
+                <li><strong>O que pode ser mantido:</strong> Registros de logs de acesso brutos (IP e data/hora) exigidos pelo Marco Civil da Internet por um período legal obrigatório, após o qual são automaticamente deletados.</li>
+                <li><strong>Prazo:</strong> A remoção técnica completa dos nossos servidores de produção ocorre em até 15 dias úteis após a confirmação da solicitação.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FP Inteligência Financeira e Tecnológica LTDA. Todos os direitos reservados.</p>
+        <p>Fluxy - Seu dinheiro, sob controle.</p>
+    </footer>
+
+</body>
+</html>
